@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Todo</title>
+</head>
+<body>
+  <h1>Todos</h1>
+  <div id="list">
+    <div id="list-container">
+      <div class="list-row">
+        <div class="check-box unchecked"></div>
+        <div class="task-text">Task</div>
+        <div class="task-del">&#9747;</div>
+      </div>
+
+      <div class="list-row">
+        <div class="check-box checked"></div>
+        <div class="task-text task-complete">Task</div>
+        <div class="task-del">&#9747;</div>
+      </div>
+    </div>
+  
+    <div id="list-footer" class="list-row">
+      <div id="tasks-left"><span id="task-count">#</span> tasks left</div>
+      <div id="mode-all" class="footer-button selected" onclick="classList.toggle('selescted')">All</div>
+      <div id="mode-active" class="footer-button">Active</div>
+      <div id="mode-complete" class="footer-button">Complete</div>
+    </div>
+  </div>
+
+  <script>
+    let unchecks = document.getElementsByClassName("unchecked")
+    for (const n in unchecks) {
+      unchecks[n].innerHTML = "&#9744;";
+    }
+
+    let checks = document.getElementsByClassName("checked")
+    for (const n in checks) {
+      checks[n].innerHTML = "&#9746;";
+    }
+  </script>
+</body>
+</html>
