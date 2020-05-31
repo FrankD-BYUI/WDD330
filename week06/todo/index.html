@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Todo</title>
+</head>
+
+<body>
+  <h1>Todos</h1>
+  <div id="list">
+    <div id="list-container"></div>
+
+    <div id="list-footer" class="">
+      <div id="tasks-left"><span id="task-count">#</span> tasks left</div>
+      <button id="all" class="footer-button selected">All</button>
+      <button id="active" class="footer-button">Active</button>
+      <button id="complete" class="footer-button">Complete</button>
+    </div>
+  </div>
+
+  <br>
+  <div id="new-task">
+    <textarea id="new-task-text"></textarea>
+    <button id="new-task-button">+</button>
+  </div>
+
+  <!--<div><button id="clear-list">Clear List content</button></div>-->
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
