@@ -1,0 +1,3 @@
+week09/workflow/parcel/*
+#!week09/workflow/parcel/build/
+*.zip
