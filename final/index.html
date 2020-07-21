@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LotR: CD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>The Lord of the Rings: Character Database</h1>
+  <div>
+    <ul id="dataList"></ul>
+  </div>
+  <div>
+    <button type="button" id="prev" onclick="prevPage();">&lt;- Previous</button>
+    Page <input type="number" id="pageNum"> of <span id="pageCount"></span>
+    <button type="button" id="goBtn" onclick="setPage();">Go</button>
+    <button type="button" id="next" onclick="nextPage();">Next -&gt;</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
