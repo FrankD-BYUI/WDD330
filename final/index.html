@@ -22,8 +22,10 @@
       </div>
       <div id="pageControls">
         <button type="button" id="prev" onclick="prevPage();">&larr; Previous</button>
-        Page <input type="number" id="pageNum"> of <span id="pageCount"></span>
-        <button type="button" id="goBtn" onclick="setPage();">Go</button>
+        <form method="POST" action="javascript:setPage();">
+          <label>Page <input type="number" id="pageNum"> of <span id="pageCount"></span></label>
+          <input type="submit" id="goBtn" onclick="setPage();" value="Go">
+        </form>
         <button type="button" id="next" onclick="nextPage();">Next &rarr;</button>
       </div>
     </main>
