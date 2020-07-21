@@ -10,6 +10,8 @@ body {
   background-color: #fefae0;
   font-family: 'Noto Serif', serif;
   color: #283618;
+  font-size: 1.25em;
+
 }
 
 header {
@@ -30,13 +32,17 @@ header h1 {
   padding: 3px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Cinzel', serif;
 }
 
-#contentDiv {
-  min-height: 100%;
-  margin-bottom: -2em;
+main {
+  margin-bottom: 2em;
 }
 
 #dataList {
@@ -46,15 +52,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#dataList li {
-  
-}
-
 #dataList a {
   display: block;
   color: black;
   text-decoration: none;
-  padding: 3px;
+  padding: 10px;
   margin: 3px;
   border-left: solid 4px #283618AA;
   border-right: solid 2px #28361850;
@@ -63,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #DDA15E50;
 }
 
-#dataList a:active {
+#dataList a:focus {
   background-color: #BC6C2575;
 }
 
@@ -92,13 +94,10 @@ td:nth-child(2) {
   text-align: center;
 }
 
-button, input {
+button,
+input {
   font-family: 'Noto Serif', serif;
   font-size: 1em;
-}
-
-footer {
-  height: 2em;
 }
 
 footer p {
