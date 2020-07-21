@@ -6,19 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LotR: CD</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.ico">
 </head>
 
 <body>
-  <h1>The Lord of the Rings: Character Database</h1>
-  <div>
-    <ul id="dataList"></ul>
+  <div id="contentDiv">
+    <header>
+      <img src="./icon-one-ring.svg" alt="One Ring Icon" id="icon">
+      <h1>The Lord of the Rings: Character Database</h1>
+    </header>
+
+    <main>
+      <div>
+        <ul id="dataList"></ul>
+      </div>
+      <div id="pageControls">
+        <button type="button" id="prev" onclick="prevPage();">&larr; Previous</button>
+        Page <input type="number" id="pageNum"> of <span id="pageCount"></span>
+        <button type="button" id="goBtn" onclick="setPage();">Go</button>
+        <button type="button" id="next" onclick="nextPage();">Next &rarr;</button>
+      </div>
+    </main>
   </div>
-  <div>
-    <button type="button" id="prev" onclick="prevPage();">&lt;- Previous</button>
-    Page <input type="number" id="pageNum"> of <span id="pageCount"></span>
-    <button type="button" id="goBtn" onclick="setPage();">Go</button>
-    <button type="button" id="next" onclick="nextPage();">Next -&gt;</button>
-  </div>
+  <footer>
+    <p>&copy;2020 Frank Desjardins | BYU-Idaho | WDD 330</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 

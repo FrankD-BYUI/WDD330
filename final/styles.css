@@ -1,4 +1,75 @@
-table, tr, td {
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif:ital@0;1&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #fefae0;
+  font-family: 'Noto Serif', serif;
+  color: #283618;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+header h1 {
+  margin: 0;
+  padding: 3px;
+  text-align: center;
+  font-size: calc(1em + 2vw);
+}
+
+#icon {
+  max-width: 25vw;
+  padding: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+}
+
+#contentDiv {
+  min-height: 100%;
+  margin-bottom: -2em;
+}
+
+#dataList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#dataList li {
+  
+}
+
+#dataList a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 3px;
+  margin: 3px;
+  border-left: solid 4px #283618AA;
+  border-right: solid 2px #28361850;
+  border-bottom: solid 1px #28361850;
+  border-top: solid 1px #28361825;
+  background-color: #DDA15E50;
+}
+
+#dataList a:active {
+  background-color: #BC6C2575;
+}
+
+table,
+tr,
+td {
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -9,4 +80,31 @@ td:first-child {
 
 td:nth-child(2) {
   padding-left: 5px;
+}
+
+#pageControls {
+  padding: 3px;
+  text-align: center;
+}
+
+#pageNum {
+  width: 2em;
+  text-align: center;
+}
+
+button, input {
+  font-family: 'Noto Serif', serif;
+  font-size: 1em;
+}
+
+footer {
+  height: 2em;
+}
+
+footer p {
+  margin: 0;
+  padding: 3px;
+  font-style: italic;
+  font-size: .75em;
+  text-align: center;
 }
