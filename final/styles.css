@@ -1,3 +1,4 @@
+/* General rules */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif:ital@0;1&display=swap');
 
 html,
@@ -32,6 +33,10 @@ header h1 {
   padding: 3px;
 }
 
+main {
+  margin-bottom: 1em;
+}
+
 h1,
 h2,
 h3,
@@ -41,10 +46,15 @@ h6 {
   font-family: 'Cinzel', serif;
 }
 
-main {
-  margin-bottom: 2em;
+footer p {
+  margin: 0;
+  padding: 3px;
+  font-style: italic;
+  font-size: .75em;
+  text-align: center;
 }
 
+/* Homepage rules */
 #dataList {
   margin: 0;
   padding: 0;
@@ -69,21 +79,6 @@ main {
   background-color: #BC6C2575;
 }
 
-table,
-tr,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-td:first-child {
-  text-align: right;
-}
-
-td:nth-child(2) {
-  padding-left: 5px;
-}
-
 #pageControls {
   padding: 3px;
   text-align: center;
@@ -104,10 +99,34 @@ form {
   display: inline;
 }
 
-footer p {
-  margin: 0;
-  padding: 3px;
-  font-style: italic;
-  font-size: .75em;
+/* Details page rules */
+#detailsDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#name {
   text-align: center;
+  margin: 10px
+}
+
+#detailsTable {
+  margin: auto;
+}
+
+table {
+  border: solid #283618 1px;
+  box-shadow: #283618 3px 3px 3px;
+}
+
+tr {
+  padding: 5px 0;
+}
+
+td:first-child {
+  text-align: right;
+}
+
+td:nth-child(2) {
+  padding-left: 5px;
 }

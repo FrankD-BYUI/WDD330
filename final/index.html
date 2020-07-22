@@ -12,7 +12,7 @@
 <body>
   <div id="contentDiv">
     <header>
-      <img src="./icon-one-ring.svg" alt="One Ring Icon" id="icon">
+      <a href="./index.html"><img src="./icon-one-ring.svg" alt="One Ring Icon" id="icon"></a>
       <h1>The Lord of the Rings: Character Database</h1>
     </header>
 
@@ -21,19 +21,19 @@
         <ul id="dataList"></ul>
       </div>
       <div id="pageControls">
-        <button type="button" id="prev" onclick="prevPage();">&larr; Previous</button>
-        <form method="POST" action="javascript:setPage();">
-          <label>Page <input type="number" id="pageNum"> of <span id="pageCount"></span></label>
-          <input type="submit" id="goBtn" onclick="setPage();" value="Go">
+        <button type="button" id="prev">&larr; Back</button>
+        <form method="POST" action="#" id="pageForm">
+          <label>Page <input type="number" id="pageNum"> of <span id="pageCount">#</span></label>
         </form>
-        <button type="button" id="next" onclick="nextPage();">Next &rarr;</button>
+        <input type="submit" id="goBtn" value="Go">
+        <button type="button" id="next">Next &rarr;</button>
       </div>
     </main>
   </div>
   <footer>
     <p>&copy;2020 Frank Desjardins | BYU-Idaho | WDD 330</p>
   </footer>
-  <script src="script.js"></script>
+  <script type="module" src="./js/index.js">import {prevPage, setPage, nextPage } from "./js/index.js"</script>
 </body>
 
 </html>

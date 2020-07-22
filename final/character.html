@@ -9,48 +9,60 @@
 </head>
 
 <body>
-  <h1>The Lord of the Rings: Character Database</h1>
-  <h2 id="name">name</h2>
-  <table>
-    <tr>
-      <td>Gender:</td>
-      <td id="gender"></td>
-    </tr>
-    <tr>
-      <td>Race:</td>
-      <td id="race"></td>
-    </tr>
-    <tr>
-      <td>Realm</td>
-      <td id="realm"></td>
-    </tr>
-    <tr>
-      <td>Spouse:</td>
-      <td id="spouse"></td>
-    </tr>
-    <tr>
-      <td>Birth:</td>
-      <td id="birth"></td>
-    </tr>
-    <tr>
-      <td>Death:</td>
-      <td id="death"></td>
-    </tr>
-    <tr>
-      <td>Hair:</td>
-      <td id="hair"></td>
-    </tr>
-    <tr>
-      <td>Height:</td>
-      <td id="height"></td>
-    </tr>
-    <tr>
-      <td>Wiki Article:</td>
-      <td><a id="wiki" target="_blank" href="#">Link</a></td>
-    </tr>
-  </table>
+  <div id="contentDiv">
+    <header>
+      <a href="./index.html"><img src="./icon-one-ring.svg" alt="One Ring Icon" id="icon"></a>
+      <h1>The Lord of the Rings: Character Database</h1>
+    </header>
 
-  <script src="character.js"></script>
+    <main>
+      <div id="detailsDiv">
+        <h2 id="name"> </h2>
+        <table id="detailsTable">
+          <tr>
+            <td>Gender:</td>
+            <td id="gender"></td>
+          </tr>
+          <tr>
+            <td>Race:</td>
+            <td id="race"></td>
+          </tr>
+          <tr>
+            <td>Realm</td>
+            <td id="realm"></td>
+          </tr>
+          <tr>
+            <td>Spouse:</td>
+            <td id="spouse"></td>
+          </tr>
+          <tr>
+            <td>Birth:</td>
+            <td id="birth"></td>
+          </tr>
+          <tr>
+            <td>Death:</td>
+            <td id="death"></td>
+          </tr>
+          <tr>
+            <td>Hair:</td>
+            <td id="hair"></td>
+          </tr>
+          <tr>
+            <td>Height:</td>
+            <td id="height"></td>
+          </tr>
+          <tr>
+            <td>Wiki Article:</td>
+            <td><a id="wiki" target="_blank" href="#">Link</a></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <p>&copy;2020 Frank Desjardins | BYU-Idaho | WDD 330</p>
+  </footer>
+  <script type="module" src="./js/character.js"></script>
 </body>
 
 </html>

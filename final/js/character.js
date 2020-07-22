@@ -1,28 +1,26 @@
+import {
+  getApiData
+} from "./api.js"
+import * as ls from "./ls.js";
+
 let params = new URLSearchParams(document.location.search.substring(1));
 let charId = params.get("id");
-console.log(charId);
-getChar();
+let apiurl = `https://the-one-api.herokuapp.com/v1/character/${charId}`;
+let charData = ls.getData(charId);
 
-async function getChar() {
-  fetch(`https://the-one-api.herokuapp.com/v1/character/${charId}`, {
-      "method": "GET",
-      "headers": {
-        "Authorization": "Bearer vheiUkCg-kcvMNYEgwvN"
-      }
-    })
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (jsonObject) {
-      console.log(jsonObject);
-      fillCharData(jsonObject);
-    })
-    .catch(error => {
-      console.log(error);
-    });
+if (charData) {
+  renderPage(charData);
+} else {
+  getApiData(apiurl, onApiLoad);
 }
 
-function fillCharData(charData) {
+function onApiLoad(data) {
+  charData = data;
+  ls.saveData(charId, charData);
+  renderPage();
+}
+
+function renderPage() {
   let dataPoints = ["name", "gender", "race", "realm", "spouse", "birth", "death", "hair", "height"]
   for (let i = 0; i < dataPoints.length; i++) {
     if (charData[dataPoints[i]]) {
